@@ -10,15 +10,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Agenda_Online">
         <activity
-            android:name=".Pantalla_Carga"
+            android:name=".Registro"
             android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Pantalla_Carga"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                // Launcher va a ser lo primero que se va a visualizar
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>
