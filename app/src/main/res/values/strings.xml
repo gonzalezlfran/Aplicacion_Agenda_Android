@@ -6,4 +6,17 @@
     <string name="boton_login">Login</string>
     <string name="boton_registro">Registro</string>
 
+
+    <!--Actividad Registro-->
+    <string name="CrearCuenta_txt">Crear una cuenta</string>
+    <string name="Nombre_editar">Nombre</string>
+    <string name="Correo_editar">Correo electrónico</string>
+    <string name="Password_editar">Contraseña</string>
+    <string name="Confirmar_password_editar">Confirmar contraseña</string>
+    <string name="Registrar_usuario">Registrar</string>
+    <string name="TengoCuenta_txt">Tengo una cuenta</string>
+
+
+
+
 </resources>
