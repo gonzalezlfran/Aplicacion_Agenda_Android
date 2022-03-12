@@ -55,7 +55,7 @@
             android:id="@+id/Correo_editar"
             android:hint="@string/Correo_editar"
             android:layout_width="match_parent"
-            android:inputType="textPersonName|textCapWords"
+            android:inputType="textEmailAddress"
             android:drawableStart="@drawable/icono_correo"
             android:drawablePadding="10dp"
             android:padding="20dp"
@@ -84,8 +84,8 @@
             app:passwordToggleEnabled="true" />
 
         <EditText
-            android:id="@+id/Confirmar_password_editar"
-            android:hint="@string/Confirmar_password_editar"
+            android:id="@+id/ConfirmarPassword_editar"
+            android:hint="@string/ConfirmarPassword_editar"
             android:layout_width="match_parent"
             android:inputType="textPassword"
             android:drawableStart="@drawable/icono_password"
@@ -95,13 +95,13 @@
 
 
         <Button
-            android:id="@+id/Registrar_usuario"
-            android:text="@string/Registrar_usuario"
+            android:id="@+id/RegistrarUsuario"
+            android:text="@string/RegistrarUsuario"
             android:textSize="18sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-        <EditText
+        <TextView
             android:id="@+id/TengoCuenta_txt"
             android:text="@string/TengoCuenta_txt"
             android:gravity="center"

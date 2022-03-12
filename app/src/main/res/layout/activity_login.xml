@@ -7,6 +7,87 @@
     android:layout_height="match_parent"
     tools:context=".Login">
 
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="@string/IniciarSesion"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+        </TextView>
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="iniciar_sesion.json"
+            app:lottie_imageAssetsFolder="assets"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            app:lottie_loop="true" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:id="@+id/CorreoLogin"
+                android:hint="@string/CorreoLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/icono_correo"
+                android:padding="20dp"
+                android:inputType="textEmailAddress">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:passwordToggleEnabled="true">
 
 
+            <EditText
+                android:id="@+id/PasswordLogin"
+                android:hint="@string/PasswordLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/icono_password"
+                android:padding="20dp"
+                android:inputType="textPassword">
+
+            </EditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/boton_logeo"
+            android:id="@+id/boton_logeo"
+            android:layout_marginTop="10dp">
+
+        </Button>
+
+        <TextView
+            android:id="@+id/UsuarioNuevo_txt"
+            android:text="@string/UsuarioNuevo_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+        </TextView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 </RelativeLayout>

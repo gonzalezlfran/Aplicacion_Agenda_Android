@@ -12,11 +12,22 @@
     <string name="Nombre_editar">Nombre</string>
     <string name="Correo_editar">Correo electrónico</string>
     <string name="Password_editar">Contraseña</string>
-    <string name="Confirmar_password_editar">Confirmar contraseña</string>
-    <string name="Registrar_usuario">Registrar</string>
+    <string name="ConfirmarPassword_editar">Confirmar contraseña</string>
+    <string name="RegistrarUsuario">Registrar</string>
     <string name="TengoCuenta_txt">Tengo una cuenta</string>
 
+    <!--Actividad Login-->
+    <string name="IniciarSesion">Iniciar Sesión</string>
+    <string name="CorreoLogin">Correo</string>
+    <string name="PasswordLogin">Contraseña</string>
+    <string name="boton_logeo">Ingresar</string>
+    <string name="UsuarioNuevo_txt">¿No tienes una cuenta? Regístrate</string>
 
+    <!--Menu Principal-->
+    <string name="CerrarSesion">Salir</string>
+    <string name="BienvenidoPrincipal">Salir</string>
+    <string name="NombrePrincipal">Salir</string>
+    <string name="CorreoPrincipal">Salir</string>
 
 
 </resources>
