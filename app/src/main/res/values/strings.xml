@@ -25,9 +25,12 @@
 
     <!--Menu Principal-->
     <string name="CerrarSesion">Salir</string>
-    <string name="BienvenidoPrincipal">Salir</string>
-    <string name="NombrePrincipal">Salir</string>
-    <string name="CorreoPrincipal">Salir</string>
+    <string name="BienvenidoPrincipal">Bienvenido(a)</string>
+    <string name="NombrePrincipal">--</string>
+    <string name="CorreoPrincipal">--</string>
+    <string name="AgregarNota"> Agregar</string>
+    <string name="ListarNotas"> Mis Notas</string>
+
 
 
 </resources>

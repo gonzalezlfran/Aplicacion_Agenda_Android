@@ -1,20 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MenuPrincipal">
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"/>
 
-    <Button
-        android:id="@+id/CerrarSesion"
-        android:text="@string/CerrarSesion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:padding="5dp"
+       android:gravity="center">
 
-</RelativeLayout>
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="120dp"
+           app:cardBackgroundColor="@color/teal_700"
+           app:cardUseCompatPadding="true"
+           android:padding="0.2dp"
+           app:cardCornerRadius="5dp">
+
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="10dp"
+               android:orientation="vertical">
+
+               <TextView
+                   android:text="@string/BienvenidoPrincipal"
+                   android:textColor="#fff"
+                   android:textSize="20sp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+               </TextView>
+
+               <TextView
+                   android:id="@+id/NombrePrincipal"
+                   android:text="@string/NombrePrincipal"
+                   android:textColor="#fff"
+                   android:textSize="20sp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+               </TextView>
+
+               <TextView
+                   android:id="@+id/CorreoPrincipal"
+                   android:text="@string/CorreoPrincipal"
+                   android:textColor="#fff"
+                   android:textSize="20sp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+               </TextView>
+
+           </androidx.appcompat.widget.LinearLayoutCompat>
+
+       </androidx.cardview.widget.CardView>
+
+
+       <androidx.appcompat.widget.LinearLayoutCompat
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <androidx.appcompat.widget.LinearLayoutCompat
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="20dp"
+               android:weightSum="2">
+
+               <!--Opcion 1 -->
+               <androidx.appcompat.widget.LinearLayoutCompat
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:layout_marginTop="5dp"
+                   android:orientation="vertical"
+                   android:gravity="center">
+
+                   <androidx.appcompat.widget.AppCompatImageView
+                       android:layout_width="70dp"
+                       android:layout_height="70dp"
+                       android:src="@drawable/agregar">
+
+                   </androidx.appcompat.widget.AppCompatImageView>
+
+                   <Button
+                       android:text="@string/AgregarNota"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp">
+
+                   </Button>
+
+
+               </androidx.appcompat.widget.LinearLayoutCompat>
+
+               <!--Opcion 2 -->
+               <androidx.appcompat.widget.LinearLayoutCompat
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:layout_marginTop="5dp"
+                   android:orientation="vertical"
+                   android:gravity="center">
+
+                   <androidx.appcompat.widget.AppCompatImageView
+                       android:layout_width="70dp"
+                       android:layout_height="70dp"
+                       android:src="@drawable/lista">
+
+                   </androidx.appcompat.widget.AppCompatImageView>
+
+                   <Button
+                       android:text="@string/ListarNotas"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginLeft="2dp">
+
+                   </Button>
+
+
+               </androidx.appcompat.widget.LinearLayoutCompat>
+
+           </androidx.appcompat.widget.LinearLayoutCompat>
+
+       </androidx.appcompat.widget.LinearLayoutCompat>
+       <Button
+           android:id="@+id/CerrarSesion"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:text="@string/CerrarSesion" />
+
+
+   </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+</ScrollView>

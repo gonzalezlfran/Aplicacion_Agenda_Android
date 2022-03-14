@@ -145,10 +145,12 @@ public class Registro extends AppCompatActivity {
         Datos.put("nombre", nombre);
         Datos.put("password", password);
 
+        // Primero tengo que obtener una referencia a la base de datos, es decir una instancia de DatabaseReference
         DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Usuarios"); //nombre que tendra la base de datos (Usuarios)
-        //va a listar los datos ordenador por uid
+
+        //Va a listar los datos ordenados por Uid (los guarda en la base de datos con el setValue)
         databaseReference.child(uid).setValue(Datos)
-                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                .addOnSuccessListener(new OnSuccessListener<Void>() { //OnSuccesListener utilizado para el caso de aviso de errores (para tener buenas practicas) (de Github)
             @Override
             public void onSuccess(Void unused) {
                 progressDialog.dismiss();
