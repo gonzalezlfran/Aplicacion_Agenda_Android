@@ -31,6 +31,20 @@
     <string name="AgregarNota"> Agregar</string>
     <string name="ListarNotas"> Mis Notas</string>
 
+    <!--Agregar Nota-->
+    <string name="Uid_Usuario">Uid del Usuario</string>
+    <string name="Correo_Usuario">Correo del Usuario</string>
+    <string name="Fecha_Hora_Actual">Fecha y hora actual</string>
+    <string name="Titulo">Titulo</string>
+    <string name="Boton_Calendario">Calendario</string>
+    <string name="Descripcion">Descripcion</string>
+    <string name="Fecha">00/00/00</string>
+    <string name="Estado">No finalizado</string>
+    <string name="Boton_GuardarNota_BD">Guardar</string>
+
+    <!--Menu BD-->
+    <string name="Agregar_Nota_BD">Agregar</string>
+
 
 
 </resources>

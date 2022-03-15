@@ -16,7 +16,7 @@
 
        <androidx.cardview.widget.CardView
            android:layout_width="match_parent"
-           android:layout_height="120dp"
+           android:layout_height="135dp"
            app:cardBackgroundColor="@color/teal_700"
            app:cardUseCompatPadding="true"
            android:padding="0.2dp"
@@ -32,6 +32,15 @@
                    android:text="@string/BienvenidoPrincipal"
                    android:textColor="#fff"
                    android:textSize="20sp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+               </TextView>
+
+               <TextView
+                   android:id="@+id/Uid_Usuario"
+                   android:text="@string/Uid_Usuario"
+                   android:textColor="#fff"
+                   android:textSize="15sp"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content">
                </TextView>
@@ -88,6 +97,7 @@
                    </androidx.appcompat.widget.AppCompatImageView>
 
                    <Button
+                       android:id="@+id/AgregarNota"
                        android:text="@string/AgregarNota"
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
@@ -115,6 +125,7 @@
                    </androidx.appcompat.widget.AppCompatImageView>
 
                    <Button
+                       android:id="@+id/ListarNotas"
                        android:text="@string/ListarNotas"
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"

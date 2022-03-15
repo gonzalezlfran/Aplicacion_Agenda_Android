@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarNota.Agregar_Nota">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!--id Usuario -->
+        <TextView
+            android:id="@+id/Uid_Usuario"
+            android:hint="@string/Uid_Usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <!--Correo Usuario -->
+        <TextView
+            android:id="@+id/Correo_Usuario"
+            android:hint="@string/Correo_Usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <!--Fecha y hora actual -->
+        <TextView
+            android:id="@+id/Fecha_Hora_Actual"
+            android:hint="@string/Fecha_Hora_Actual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <!--Titulo -->
+        <EditText
+            android:id="@+id/Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Titulo"
+            android:textSize="25sp"
+            android:textStyle="bold">
+        </EditText>
+
+        <!--Descripcion-->
+        <EditText
+            android:id="@+id/Descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Descripcion"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:minHeight="150dp"
+            android:gravity="start">
+        </EditText>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <!--Boton para abrir calendario-->
+        <Button
+            android:id="@+id/Boton_Calendario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Boton_Calendario"
+            app:icon = "@drawable/icono_calendario">
+        </Button>
+
+        <!--Visualizar fecha elegida-->
+        <TextView
+            android:id="@+id/Fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/Fecha"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp">
+
+        </TextView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!--Estado de la nota-->
+        <TextView
+            android:id="@+id/Estado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Estado"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+            <!--Boton guardar nota en base de datos-->
+            <Button
+                android:id="@+id/Boton_GuardarNota_BD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Boton_GuardarNota_BD"
+                app:icon = "@drawable/ic_guardar_nota_bd">
+            </Button>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+</ScrollView>
