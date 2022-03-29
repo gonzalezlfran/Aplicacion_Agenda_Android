@@ -2,14 +2,14 @@ package com.franciscogonzalez_agenda_online.Objetos;
 
 public class Nota {
 
-    String id, uid_usuario, correo_usuario, fecha_hora_actual, titulo, descripcion, fecha_nota, estado;
+    String id_nota, uid_usuario, correo_usuario, fecha_hora_actual, titulo, descripcion, fecha_nota, estado;
 
 
     public Nota() {
     }
 
-    public Nota(String id, String uid_usuario, String correo_usuario, String fecha_hora_actual, String titulo, String descripcion, String fecha_nota, String estado) {
-        this.id = id;
+    public Nota(String id_nota, String uid_usuario, String correo_usuario, String fecha_hora_actual, String titulo, String descripcion, String fecha_nota, String estado) {
+        this.id_nota = id_nota;
         this.uid_usuario = uid_usuario;
         this.correo_usuario = correo_usuario;
         this.fecha_hora_actual = fecha_hora_actual;
@@ -20,11 +20,11 @@ public class Nota {
     }
 
     public String getId() {
-        return id;
+        return id_nota;
     }
 
     public void setId(String id) {
-        this.id = id;
+        this.id_nota = id;
     }
 
     public String getUid_usuario() {

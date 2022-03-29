@@ -47,4 +47,17 @@
 
 
 
+    <!--Listar Notas-->
+
+    <string name="Id_nota_Item">Id nota</string>
+    <string name="Uid_Usuario_Item">Uid del Usuario</string>
+    <string name="Correo_Usuario_Item">Correo del Usuario</string>
+    <string name="Fecha_Hora_Actual_Item">Fecha y hora actual</string>
+    <string name="Titulo_Item">Titulo</string>
+    <string name="Boton_Calendario_Item">Calendario</string>
+    <string name="Descripcion_Item">Descripcion</string>
+    <string name="Fecha_Item">00/00/00</string>
+    <string name="Estado_Item">No finalizado</string>
+    <string name="Boton_GuardarNota_BD_Item">Guardar</string>
+
 </resources>
