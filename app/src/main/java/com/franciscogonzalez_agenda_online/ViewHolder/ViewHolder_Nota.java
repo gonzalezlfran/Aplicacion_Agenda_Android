@@ -53,7 +53,7 @@ public class ViewHolder_Nota extends RecyclerView.ViewHolder {
 
 
         //Declarar las vistas
-        TextView Id_nota_Item,Uid_Usuario_Item, Correo_Usuario_Item, Fecha_Hora_Actual_Item, Titulo_Item,Descripcion_Item,Estado_Item;
+        TextView Id_nota_Item,Uid_Usuario_Item, Correo_Usuario_Item, Fecha_Hora_Actual_Item, Titulo_Item,Descripcion_Item,Estado_Item, Fecha_Item;
 
         //Establecer conexion con el item
         Id_nota_Item = mView.findViewById(R.id.Id_nota_Item);
@@ -63,7 +63,7 @@ public class ViewHolder_Nota extends RecyclerView.ViewHolder {
         Titulo_Item = mView.findViewById(R.id.Titulo_Item);
         Descripcion_Item= mView.findViewById(R.id.Descripcion_Item);
         Estado_Item = mView.findViewById(R.id.Estado_Item);
-
+        Fecha_Item = mView.findViewById(R.id.Fecha_Item);
 
         //Setear info dentro del item
         Id_nota_Item.setText(id_nota);
@@ -73,6 +73,7 @@ public class ViewHolder_Nota extends RecyclerView.ViewHolder {
         Titulo_Item.setText(titulo);
         Descripcion_Item.setText(descripcion);
         Estado_Item.setText(estado);
+        Fecha_Item.setText(fecha_nota);
 
 
 

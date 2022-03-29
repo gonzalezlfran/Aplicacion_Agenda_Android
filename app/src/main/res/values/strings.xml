@@ -60,4 +60,10 @@
     <string name="Estado_Item">No finalizado</string>
     <string name="Boton_GuardarNota_BD_Item">Guardar</string>
 
+
+    <!--Eliminar-->
+
+    <string name="Eliminar">Eliminar</string>
+
+
 </resources>
